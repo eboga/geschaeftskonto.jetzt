@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>konto-vergleich.jetzt</title>
-    <description>konto-vergleich.jetzt</description>
-    <link>https://www.konto-vergleich.pro/</link>
-    <atom:link href="https://www.konto-vergleich.pro/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 30 Apr 2019 23:37:32 +0200</pubDate>
-    <lastBuildDate>Tue, 30 Apr 2019 23:37:32 +0200</lastBuildDate>
+    <title>geschaeftskonto.jetzt</title>
+    <description>geschaeftskonto.jetzt</description>
+    <link>https://www.geschaeftskonto.jetzt/</link>
+    <atom:link href="https://www.geschaeftskonto.jetzt/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 01 May 2019 11:33:19 +0200</pubDate>
+    <lastBuildDate>Wed, 01 May 2019 11:33:19 +0200</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
   </channel>
