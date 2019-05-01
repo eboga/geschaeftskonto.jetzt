@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>geschaeftskonto.jetzt</title>
+    <description>geschaeftskonto.jetzt</description>
+    <link>https://www.geschaeftskonto.jetzt/de/</link>
+    <atom:link href="https://www.geschaeftskonto.jetzt/de/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 01 May 2019 18:40:17 +0200</pubDate>
+    <lastBuildDate>Wed, 01 May 2019 18:40:17 +0200</lastBuildDate>
+    <generator>Jekyll v3.8.5</generator>
+    
+  </channel>
+</rss>
