@@ -420,7 +420,7 @@ nav .searchbar .searchIcon {
     <body>
         <amp-sidebar id="sidebar-right" class="mobile-sidebar" layout="nodisplay" side="right">
     <div class="sidebar-header">
-        <a class="sidebar-logo" href="/"><svg class="logo-b"><use xlink:href="#logo-b"></use></svg></a>
+        <a class="sidebar-logo" href="/de/"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg></a>
         <div class="toggle-btns">
             <button class="closebtn" on='tap:sidebar-right.close'>
                 <svg class="close"><use xlink:href="#close"></use></svg>
@@ -439,21 +439,32 @@ nav .searchbar .searchIcon {
 
         <div class="top">
             <ul>
-                <li><a href="/vergleich/">Kreditkarten Vergleich</a></li>
-                <li><a href="/american-express/">American Express Platinum</a></li>
-                <li><a href="/barclaycard/">Barclaycard Platinum Double</a></li>
-                <li><a href="/deutsche-bank/">Deutsche Bank MasterCard Platin</a></li>
-                <li><a href="/netbank/">netbank MasterCard Platinum</a></li>
-                <li><a href="/postbank/">Postbank VISA Card Platinum</a></li>
+                <li><a href="/de/geschaeftskonto-vergleich/">Vergleich</a></li>
+                
+                <li><span aria-haspopup="true">Konten</span>
+                    <ul class="dropdown" aria-label="submenu">
+                        <li><a href="/de/holvi-builder/">Holvi Builder</a></li>
+                        <li><a href="/de/holvi-complete/">Holvi Complete</a></li>
+                        <li><a href="/de/fidor-business/">Fidor Business</a></li>
+                        <li><a href="">Hufsy Business</a></li>
+                        <li><a href="/de/n26-business/">N26 Business</a></li>
+                        <li><a href="/de/n26-business-black/">N26 Business Black</a></li>
+                        <li><a href="/de/netbank-business-basic/">Netbank Business Basic</a></li>
+                        <li><a href="/de/netbank-business-premium/">Netbank Business Premium</a></li>
+                        <li><a href="/de/o2-business/">o2 Business Banking</a></li>
+                        <li><a href="/de/kontist-business-free/">Kontist Business Free</a></li>
+                        <li><a href="/de/kontist-business-premium//">Kontist Business Premium</a></li>
+                        <li><a href="/de/penta-business-basic/">Penta Business Basic</a></li>
+                        <li><a href="/de/penta-business-advanced/">Penta Business Advanced</a></li>
+                        <li><a href="/de/penta-business-premium/">Penta Business Premium</a></li>
+                        <li><a href="/de/postbank-business-giro/">Postbank Business Giro</a></li>
+                        <li><a href="/de/postbank-business-giro-aktiv/">Postbank Business Giro aktiv</a></li>
+                        <li><a href="/de/postbank-business-giro-aktiv-plus/">Postbank Business Giro aktiv plus</a></li>
+                    </ul>
+                </li>
+                
             </ul>
-            <ul>
-                <li><a href="#">Versicherungsleistungen</a></li>
-                <li><a href="#">Reisekrankenversicherung</a></li>
-                <li><a href="#">Reiserücktrittsversicherung</a></li>
-                <li><a href="#">Reisegepäckversicherung</a></li>
-                <li><a href="#">Reiseunfallversicherung</a></li>
-                <li><a href="#">Mietwagenvollkaskoversicherung</a></li>
-            </ul>
+
         </div>
         <div class="bottom">
             <div class="share-links hide-for-print">
@@ -527,16 +538,7 @@ nav .searchbar .searchIcon {
                                     <li><a href="/de/postbank-business-giro-aktiv-plus/">Postbank Business Giro aktiv plus</a></li>
                                 </ul>
                             </li>
-                            <li><span aria-haspopup="true">Karten</span>
-                                <ul class="dropdown" aria-label="submenu">
-                                    <li><a href="/de/american-express-business/">American Express Business</a></li>
-                                    <li><a href="/de/american-express-business-gold/">American Express Business Gold</a></li>
-                                    <li><a href="/de/american-express-business-platinum/">American Express Business Platinum</a></li>
-                                    <li><a href="#">Miles & More Gold Business</a></li>
-                                    <li><a href="#">Miles & More Blue Business</a></li>
-                                    <li><a href="#">Global MasterCard Business</a></li>
-                                </ul>
-                            </li>
+                            
                         </ul>
                     </nav>
                     <div id="target-element-right">
@@ -664,22 +666,16 @@ nav .searchbar .searchIcon {
 
                             <div class="qm-sm-4-12">
                                 <div class="hero-top-info-name">Bargeldbezug</div>
-                                <!--<div class="top-info-value"> <span class="small">Deutschland</span> </div>-->
-                                
-                                <div class="hero-top-info-value tooltip"><span class="tooltiptext"><strong>Hinweis Bargeldabhebung</strong><br></span></div>
-                                
-                                <!---->
-                                <!--<div class="top-info-small show-for-medium"><strong></strong> </div>-->
+                                <div class="hero-top-info-value tooltip"> €<span class="tooltiptext"><strong>Hinweis Bargeldabhebung</strong><br>Mit der Postbank Business Giro können Sie weltweit kostenlos Geld abheben. Es fallen keine Abhebegebühren im Ausland an.</span></div>
                             </div>
 
 
                             <div class="qm-sm-4-12">
+                            
                                 <div class="hero-top-info-name">Sollzinsen p.a.</div>
+                                <div class="hero-top-info-value">ab <strong>7,99 %</strong></div>
+                            
                                 
-                                <div class="hero-top-info-value"> %</div>
-                                
-                                
-
                             </div>
                         </div>
 
@@ -808,7 +804,7 @@ Nachteilig ist, dass sich die Grundgebühr nach der Höhe des durchschnittlichen
                                     </tr>
                                     
                                     <tr>
-                                        <td>Account name</td>
+                                        <td>Kontobezeichnung</td>
                                         <td>Postbank Business Giro</td>
                                     </tr>
                                     
@@ -824,10 +820,14 @@ Nachteilig ist, dass sich die Grundgebühr nach der Höhe des durchschnittlichen
                                             
                                         </td>
                                     </tr>
+
+                                    
                                     <tr>
                                         <td>Kontokorrentkredit (bonitätsabhängig)</td>
                                         <td>ab <strong>7,99 %</strong> p.a.</td>
                                     </tr>
+                                    
+
                                     <tr>
                                         <td>Schufaprüfung</td>
                                         <td>
@@ -881,6 +881,35 @@ Nachteilig ist, dass sich die Grundgebühr nach der Höhe des durchschnittlichen
                                     </tr>
                                     
                                 </table>
+
+
+
+                                
+                                
+                                
+                                
+
+                                <div class="table-intro-headline">Bargeldabhebung Maximum</div>
+                                <table class="half-width">
+
+                                    <tr>
+                                        <td>Maximum pro Tag</td>
+                                        <td>
+                                            account.postbank-business-giro.withdrawal-max-per-day
+                                            
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Maximum pro Woche</td>
+                                        <td>account.postbank-business-giro.withdrawal-max-per-week</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Maximum pro Monat</td>
+                                        <td>account.postbank-business-giro.withdrawal-max-per-month</td>
+                                    </tr>
+                                </table>
+
+
                             </div>
                         </amp-selector>
                     </div>
@@ -966,15 +995,10 @@ Nachteilig ist, dass sich die Grundgebühr nach der Höhe des durchschnittlichen
     </ul>
   </div>
 
+
   <div class="qm-sm-12-12 qm-md-6-12 qm-lg-4-12 qm-xl-3-12">
-    <div class="headline"><a href="/de/firmenkreditkarten/">Firmenkreditkarten</a></div>
-    <ul>
-      <li><a href="#">American Express Business</a></li>
-      <li><a href="#">American Express Business Gold</a></li>
-      <li><a href="#">Miles & More Gold Business</a></li>
-      <li><a href="#">Miles & More Blue Business</a></li>
-      <li><a href="#">Global MasterCard Business</a></li>
-    </ul>
+    
+
     <div class="headline">Blog</div>
     <ul>
       <li><a href="/de/kosten-gebuehren-geschaeftskonto/">Gebühren & Kosten</a></li>
