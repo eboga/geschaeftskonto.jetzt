@@ -1,5 +1,6 @@
 User-agent: *
 Disallow: /zum-anbieter/
+Disallow: /en/zum-anbieter/
 Disallow: /anbieter/
 Disallow: /link/
 
