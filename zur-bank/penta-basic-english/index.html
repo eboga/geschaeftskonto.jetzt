@@ -1,14 +1,34 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
-    <meta http-equiv="refresh" content="0;url=https://www.financeads.net/tc.php?t=32210C233446367T&subid=gskj" />
-  </head>
+</head>
+<body>
+    
+    
+        <script>
+            String.prototype.includes||(String.prototype.includes=function(t,i){"use strict";return"number"!=typeof i&&(i=0),!(i+t.length>this.length)&&-1!==this.indexOf(t,i)});
 
-  <body>
-    <script type="application/javascript">
-        window.location = "https://www.financeads.net/tc.php?t=32210C233446367T&subid=gskj";
-    </script>
-  </body>
+            var target = "https://www.financeads.net/tc.php?t=32210C233446367T&subid=gskj";
+
+            if (window.location.search) {
+                var search = window.location.search.substring(1).split("&");
+                var obj = {};
+
+                for (var i = 0; i < search.length; i++) {
+                    var pairs = search[i].split("=");
+                    obj[pairs[0]] = pairs[1];
+                }
+
+                if (target.includes("subid=") && obj.subid) {
+                    var id = target.split("subid=")[1].split("&")[0];
+                    target = target.replace("subid=" + id, "subid=" + obj.subid);
+                }
+            }
+
+            window.location.replace(target);
+        </script>
+    
+</body>
 </html>
