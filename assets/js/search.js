@@ -1,19 +1,25 @@
 (function() {
     function displaySearchResults(results, store) {
-        var searchResults = document.getElementById('search-results');
+        var searchResults = document.querySelector('#c-SearchResults-list');
 
         if (results.length) { // Are there any results?
             var appendString = '';
 
             for (var i = 0; i < results.length; i++) {  // Iterate over the results
                 var item = store[results[i].ref];
-                appendString += '<li><a href="' + item.url + '"><h3>' + item.title + '</h3></a>';
-                appendString += '<p>' + item.content.substring(0, 150) + '...</p></li>';
+                appendString += '<li class="c-SearchResults-item">';
+                appendString += '<div class="c-SearchResults-heading">';
+                appendString += '<a class="c-SearchResults-link" href="' + item.url + '">' + item.title + '</a>';
+                appendString += '</div>'
+                appendString += '<div class="c-SearchResults-text">';
+                appendString += '<a class="c-SearchResults-link" href="' + item.url + '">' + item.content.substring(0, 150) + '...</a>';
+                appendString += '</div>';
+                appendString += '</li>';
             }
 
             searchResults.innerHTML = appendString;
         } else {
-            searchResults.innerHTML = '<li>No results found</li>';
+            searchResults.innerHTML = '<li class="c-SearchResults-item">No results found</li>';
         }
     }
 
@@ -35,21 +41,20 @@
     if (searchTerm) {
         document.getElementById('search-box').setAttribute("value", searchTerm);
 
-        // Initalize lunr with the fields it will be searching on. I've given title
+        // Initialize lunr with the fields it will be searching on. I've given title
         // a boost of 10 to indicate matches on this field are more important.
         var idx = lunr(function () {
-            this.field('id');
+            this.use(lunr.multiLanguage("de", "en", "ru"));
+            this.ref('id');
             this.field('title', { boost: 10 });
-            this.field('author');
-            this.field('category');
+            this.field('url');
             this.field('content');
             for (var key in window.store) {
                 this.add({
-                    'id': key,
-                    'title': window.store[key].title,
-                    'author': window.store[key].author,
-                    'category': window.store[key].category,
-                    'content': window.store[key].content
+                    "id": key,
+                    "title": window.store[key].title,
+                    "url": window.store[key].url,
+                    "content": window.store[key].content
                 });
 
 
