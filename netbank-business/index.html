@@ -1540,7 +1540,12 @@ Da die netbank eine Direktbank ist, gibt es nicht die Möglichkeit, eine Filiale
     <script type="application/json">
         {
             "vars": {
-                "account": "UA-151885960-1"
+                "account": "UA-151885960-1",
+                "config": {
+                    "AW-681002542": {
+                        "groups": "default"
+                    }
+                }
             },
             "triggers": {
                 "trackPageview": {
@@ -1557,6 +1562,23 @@ Da die netbank eine Direktbank ist, gibt es nicht die Möglichkeit, eine Filiale
                         "eventCategory": "AMP Scroll Depth",
                         "eventAction": "Scrolled",
                         "eventLabel": "${verticalScrollBoundary}%"
+                    }
+                },
+                "C_EeD2mY71xKM": {
+                    "on": "click",
+                    "request": "event",
+                    "selector": "a.to-bank",
+                    "vars": { "event_name": "conversion",
+                        "send_to": ["AW-681002542/DWBiCPrC0bgBEK6M3cQC"]
+                    }
+                },
+                "Click-Out to Bank": {
+                    "on": "click",
+                    "selector": "a.to-bank",
+                    "request": "event",
+                    "vars": {
+                        "eventCategory": "Click to Bank",
+                        "eventAction": "Netbank Geschäftskonto"
                     }
                 }
             }

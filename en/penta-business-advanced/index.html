@@ -1573,7 +1573,12 @@ At present the withdrawal of cash via bank card is not yet planned. Only Masterc
     <script type="application/json">
         {
             "vars": {
-                "account": "UA-151885960-1"
+                "account": "UA-151885960-1",
+                "config": {
+                    "AW-681002542": {
+                        "groups": "default"
+                    }
+                }
             },
             "triggers": {
                 "trackPageview": {
@@ -1590,6 +1595,23 @@ At present the withdrawal of cash via bank card is not yet planned. Only Masterc
                         "eventCategory": "AMP Scroll Depth",
                         "eventAction": "Scrolled",
                         "eventLabel": "${verticalScrollBoundary}%"
+                    }
+                },
+                "C_EeD2mY71xKM": {
+                    "on": "click",
+                    "request": "event",
+                    "selector": "a.to-bank",
+                    "vars": { "event_name": "conversion",
+                        "send_to": ["AW-681002542/DWBiCPrC0bgBEK6M3cQC"]
+                    }
+                },
+                "Click-Out to Bank": {
+                    "on": "click",
+                    "selector": "a.to-bank",
+                    "request": "event",
+                    "vars": {
+                        "eventCategory": "Click to Bank",
+                        "eventAction": "Penta Business Advanced"
                     }
                 }
             }
