@@ -3,10 +3,10 @@
   <channel>
     <title>geschaeftskonto.jetzt</title>
     <description>geschaeftskonto.jetzt</description>
-    <link>http://localhost:4004/</link>
-    <atom:link href="http://localhost:4004/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 05 Jan 2020 15:27:27 +0100</pubDate>
-    <lastBuildDate>Sun, 05 Jan 2020 15:27:27 +0100</lastBuildDate>
+    <link>https://www.geschaeftskonto.jetzt/</link>
+    <atom:link href="https://www.geschaeftskonto.jetzt/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 05 Jan 2020 15:44:25 +0100</pubDate>
+    <lastBuildDate>Sun, 05 Jan 2020 15:44:25 +0100</lastBuildDate>
     <generator>Jekyll v4.0.0</generator>
     
   </channel>
