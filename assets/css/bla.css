@@ -1,0 +1,53 @@
+body {
+    margin: 10px;
+}
+
+
+
+
+
+
+.c-List {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.c-List-li {
+    border-top: 1px solid #ddd;
+    display: flex;
+    flex: 1 100%;
+    padding-bottom: 3px;
+    padding-top: 3px;
+}
+
+.c-List-li:first-child {
+    border-top: 0;
+}
+
+
+
+.c-List-heading {
+    display: flex;
+    font-weight: 600;
+    min-width: 130px;
+}
+
+
+
+.c-List-value,
+.c-List-value > * {
+    margin: 0;
+}
+
+
+
+
+
+
+
+.c-ThematicBreak {}
