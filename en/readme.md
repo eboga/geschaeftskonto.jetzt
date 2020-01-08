@@ -1,26 +1,48 @@
-## Internal Links
-[Fidor-Bank]({% tl account.fidor-business %})
+## Description
 
-[N26 Business You]({% tl account.n26-business-you %})
-[N26 Business]({% tl account.n26-business %})
+### Pre-sort products on comparison page
 
-[Penta Business Advanced]({% tl account.penta-business-advanced %})
-[Penta Business Basic]({% tl account.penta-business-basic %})
-[Penta Business Premium]({% tl account.penta-business-premium %})
-[Penta Business Advanced]({% tl account.penta-business-advanced %})
+```
+@param {string} sort_products_by
+    Optional.
+    If the variable's value will not equal to one of the accepted values,
+        products will be sorted by their rating.
+    Accepts: 'cost'.
+    Default: nil.
+```
 
-[Kontist Business Free]({% tl account.kontist-business-free %})
-[Kontist Business Duo]({% tl account.kontist-business-duo %})
-[Kontist Business Premium]({% tl account.kontist-business-premium %})
+---
 
-[Holvi Builder]({% tl account.holvi-builder %})
-[Holvi Grower]({% tl account.holvi-grower %})
-[Holvi Complete]({% tl account.holvi-complete %})
-[Holvi Unlimited]({% tl account.holvi-unlimited %})
+### Pre-filter products on comparison page
 
-[Complete Konto von Fyrst]({% tl account.fyrst-complete %})
-
-[Geschäftskonto]({% t site.homepage-url %})
-[vergleich]({% tl pages.account-comparison %}
-[Dispo]({% tl account.pages.overdraft-loan %})
-
+```
+@param {array} preselected_filters
+    Optional.
+    Be aware, do not set multiple values that belong to the same <select>.
+    Accepts:
+        'tradesmen',
+        'freelancer',
+        'sole-proprietors',
+        'sole-traders',
+        'partnership-ucivil-law',
+        'gmbh-kgaa-ag',
+        'limited-partnership',
+        'limited',
+        'general-partnership',
+        'ug-limited-liability',
+        'partnership-company',
+        'other',
+        'association',
+        'cooperatives',
+        'sidehustle',
+        'new-company',
+        'small-company',
+        'medium-company',
+        'big-company',
+        'cash-card',
+        'credit-card',
+        'deposit-insurance-country',
+        'withdrawal-fee',
+        'schufa'.
+    Default: nil.
+```
