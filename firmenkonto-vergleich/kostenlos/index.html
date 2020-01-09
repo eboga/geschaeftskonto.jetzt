@@ -26,7 +26,9 @@
             window.dataLayer = window.dataLayer || [];
             function gtag() {dataLayer.push(arguments);}
             gtag("js", new Date());
-            gtag("config", "UA-151885960-1");
+            gtag("config", "UA-151885960-1", {
+                'optimize_id': 'GTM-NNJXNJC'
+            });
             gtag("config", "AW-681002542");
         </script><script>
                 (function(h,o,t,j,a,r){
@@ -938,7 +940,7 @@
                                                                                 'value': '1'
                                                                             });
                                                                         "
-                                                                    >Mehr Details</button>
+                                                                    >Mehr Details ↓</button>
 
                                                                 
 
@@ -1974,7 +1976,7 @@
                                                                                 'value': '1'
                                                                             });
                                                                         "
-                                                                    >Mehr Details</button>
+                                                                    >Mehr Details ↓</button>
 
                                                                 
 
@@ -3004,7 +3006,7 @@
                                                                                 'value': '1'
                                                                             });
                                                                         "
-                                                                    >Mehr Details</button>
+                                                                    >Mehr Details ↓</button>
 
                                                                 
 
@@ -4073,7 +4075,7 @@
                                                                                 'value': '1'
                                                                             });
                                                                         "
-                                                                    >Mehr Details</button>
+                                                                    >Mehr Details ↓</button>
 
                                                                 
 
@@ -5138,7 +5140,7 @@
                                                                                 'value': '1'
                                                                             });
                                                                         "
-                                                                    >Mehr Details</button>
+                                                                    >Mehr Details ↓</button>
 
                                                                 
 
@@ -6194,7 +6196,7 @@
                                                                                 'value': '1'
                                                                             });
                                                                         "
-                                                                    >Mehr Details</button>
+                                                                    >Mehr Details ↓</button>
 
                                                                 
 
@@ -7223,7 +7225,7 @@
                                                                                 'value': '1'
                                                                             });
                                                                         "
-                                                                    >Mehr Details</button>
+                                                                    >Mehr Details ↓</button>
 
                                                                 
 
@@ -8265,7 +8267,7 @@
                                                                                 'value': '1'
                                                                             });
                                                                         "
-                                                                    >Mehr Details</button>
+                                                                    >Mehr Details ↓</button>
 
                                                                 
 
@@ -9309,7 +9311,7 @@
                                                                                 'value': '1'
                                                                             });
                                                                         "
-                                                                    >Mehr Details</button>
+                                                                    >Mehr Details ↓</button>
 
                                                                 
 
@@ -10368,7 +10370,7 @@
                                                                                 'value': '1'
                                                                             });
                                                                         "
-                                                                    >Mehr Details</button>
+                                                                    >Mehr Details ↓</button>
 
                                                                 
 
@@ -11409,7 +11411,7 @@
                                                                                 'value': '1'
                                                                             });
                                                                         "
-                                                                    >Mehr Details</button>
+                                                                    >Mehr Details ↓</button>
 
                                                                 
 
@@ -12460,7 +12462,7 @@
                                                                                 'value': '1'
                                                                             });
                                                                         "
-                                                                    >Mehr Details</button>
+                                                                    >Mehr Details ↓</button>
 
                                                                 
 
@@ -13508,7 +13510,7 @@
                                                                                 'value': '1'
                                                                             });
                                                                         "
-                                                                    >Mehr Details</button>
+                                                                    >Mehr Details ↓</button>
 
                                                                 
 
@@ -14540,7 +14542,7 @@
                                                                                 'value': '1'
                                                                             });
                                                                         "
-                                                                    >Mehr Details</button>
+                                                                    >Mehr Details ↓</button>
 
                                                                 
 
@@ -15572,7 +15574,7 @@
                                                                                 'value': '1'
                                                                             });
                                                                         "
-                                                                    >Mehr Details</button>
+                                                                    >Mehr Details ↓</button>
 
                                                                 
 
@@ -16604,7 +16606,7 @@
                                                                                 'value': '1'
                                                                             });
                                                                         "
-                                                                    >Mehr Details</button>
+                                                                    >Mehr Details ↓</button>
 
                                                                 
 
@@ -17640,7 +17642,7 @@
                                                                                 'value': '1'
                                                                             });
                                                                         "
-                                                                    >Mehr Details</button>
+                                                                    >Mehr Details ↓</button>
 
                                                                 
 
@@ -18681,7 +18683,7 @@
                                                                                 'value': '1'
                                                                             });
                                                                         "
-                                                                    >Mehr Details</button>
+                                                                    >Mehr Details ↓</button>
 
                                                                 
 
@@ -20063,6 +20065,12 @@
 
                     if (target) {
                         target.classList.toggle("h-DN");
+                    }
+
+                    if (this.textContent.indexOf("↓") >= 0 ) {
+                        this.textContent = this.textContent.replace("↓", "↑");
+                    } else if (this.textContent.indexOf("↑") >= 0 ) {
+                        this.textContent = this.textContent.replace("↑", "↓");
                     }
                 });
             }
