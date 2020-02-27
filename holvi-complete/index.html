@@ -1567,12 +1567,7 @@
     <script type="application/json">
         {
             "vars": {
-                "account": "UA-151885960-1",
-                "config": {
-                    "AW-681002542": {
-                        "groups": "default"
-                    }
-                }
+                "account": "UA-151885960-1"
             },
             "triggers": {
                 "trackPageview": {
@@ -1589,23 +1584,6 @@
                         "eventCategory": "AMP Scroll Depth",
                         "eventAction": "Scrolled",
                         "eventLabel": "${verticalScrollBoundary}%"
-                    }
-                },
-                "C_EeD2mY71xKM": {
-                    "on": "click",
-                    "request": "event",
-                    "selector": "a.to-bank",
-                    "vars": { "event_name": "conversion",
-                        "send_to": ["AW-681002542/DWBiCPrC0bgBEK6M3cQC"]
-                    }
-                },
-                "Click-Out to Bank": {
-                    "on": "click",
-                    "selector": "a.to-bank",
-                    "request": "event",
-                    "vars": {
-                        "eventCategory": "Click to Bank",
-                        "eventAction": "Holvi Complete"
                     }
                 }
             }
