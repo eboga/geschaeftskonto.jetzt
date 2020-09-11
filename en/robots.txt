@@ -2,6 +2,7 @@ User-agent: *
 Disallow: /zum-anbieter/
 Disallow: /zur-bank/
 Disallow: /en/zum-anbieter/
+Disallow: /en/zur-bank/
 Disallow: /anbieter/
 Disallow: /link/
 
