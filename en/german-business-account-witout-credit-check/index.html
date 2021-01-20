@@ -81,8 +81,7 @@
         
 
         
-            @media (max-width:63.9375em){.toc{width:100%}}@media (min-width:64em){.toc{width:300px}.home-toc{width:400px}}.toc{background:var(--blue-10);float:right;margin:0 0 2rem 2rem;padding-right:20px}.toc>ol>li>a{font-weight:600}.toc ol li a:hover{color:var(--accent)}.toc ol li a{color:#27253e;padding-bottom:4px;display:block}.toc>ol{margin-bottom:25px}.toc ol{font-size:15px;line-height:1.5;margin-top:0}.toc-title{font-size:20px;font-weight:700;padding:0 0 20px 25px}
-
+            @media (max-width:63.9375em){.toc{width:100%}}@media (min-width:64em){.home-toc{width:400px}}.toc{background:var(--blue-10);border:1px solid #ddd}.toc ol li a:hover{color:var(--accent)}.toc ol li a{color:#27253e;padding-bottom:4px;display:block;font-weight:400}.toc>ol{margin-bottom:25px}.toc ol{font-size:15px;line-height:1.5;margin-top:0}.toc-title{font-size:20px;font-weight:700;padding:20px 0 20px 25px}
         
 .c-FAQ{--c-FAQ-item__iy:15px;--c-FAQ-item__ix:10px;--c-FAQ-icon__size:15px;--c-FAQ-answer__il:40px;--c-FAQ-question__fz:17px;--c-FAQ-answer__fz:17px;display:flex;flex-wrap:wrap;position:relative;}.c-FAQ--it{margin-top:45px;}.c-FAQ--ib{margin-bottom:45px;}.c-FAQ-item{border-color:var(--dark-10);border-style:solid;border-width:1px 0 0;display:flex;flex-wrap:wrap;padding-bottom:var(--c-FAQ-item__iy);padding-left:var(--c-FAQ-item__ix);padding-right:var(--c-FAQ-item__ix);padding-top:var(--c-FAQ-item__iy);position:relative;}.c-FAQ-item:last-child{border-bottom-width:1px;}.c-FAQ-label{align-items:baseline;cursor:pointer;display:flex;flex-wrap:nowrap;user-select:none;width:100%;}.c-FAQ-input:checked ~ .c-FAQ-label>.c-FAQ-question{font-weight:700;}.c-FAQ-icon{align-items:center;display:flex;height:var(--c-FAQ-icon__size);justify-content:center;min-height:var(--c-FAQ-icon__size);min-width:var(--c-FAQ-icon__size);position:relative;transform:translateY(2px);width:var(--c-FAQ-icon__size);}.c-FAQ-icon::after,.c-FAQ-icon::before{background-color:var(--accent);content:'';display:block;height:1px;position:absolute;top:70%;width:10px;}.c-FAQ-icon::before{right:50%;transform-origin:100% 50%;transform:rotate(45deg);}.c-FAQ-icon::after{left:50%;transform-origin:0% 50%;transform:rotate(-45deg);}.c-FAQ-input:checked ~ .c-FAQ-label>.c-FAQ-icon::after,.c-FAQ-input:checked ~ .c-FAQ-label>.c-FAQ-icon::before{bottom:auto;left:auto;right:auto;top:auto;transform-origin:50% 50%;width:15px;}.c-FAQ-question{font-size:var(--c-FAQ-question__fz);font-weight:400;line-height:1.5;margin:0 0 0 calc(var(--c-FAQ-answer__il) - var(--c-FAQ-icon__size));}.c-FAQ-answer{font-size:var(--c-FAQ-answer__fz);margin-left:var(--c-FAQ-answer__il);max-height:0;opacity:0;overflow:hidden;visibility:hidden;width:100%;}.c-FAQ-input:checked ~ .c-FAQ-answer{margin-top:15px;max-height:none;opacity:1;visibility:visible;}.c-FAQ-input:checked ~ .c-FAQ-answer:first-child{margin-top:0;}.c-FAQ-answer>*{font-size:var(--c-FAQ-answer__fz);line-height:1.5;margin:14px 0 0;max-width:none;padding:0;width:100%;}.c-FAQ-answer>:first-child{margin-top:0;}
 
@@ -95,6 +94,25 @@
         .h-VisuallyHidden{clip:rect(0 0 0 0);height:1px;margin:-1px;position:absolute;width:1px;}.h-DN{display:none;}.h-DIf{display:inline-flex;}.h-BxshN{box-shadow:none;}.h-W100p{width:100%;}.h-CurD{cursor:default;}.h-PointN{pointer-events:none;}.h-CurP{cursor:pointer;}.h-WhsNw{white-space:nowrap;}.h-DG{display:grid;}.h-ColorGreen{color:#1fce6d;}@media (max-width:29.99875em){.-md\:DN{display:none}}
 
         @media (max-width:29.9375em){.hide-for-small-only{display:none}}@media (min-width:30em){.show-for-small-only{display:none}}@media (min-width:30em){.hide-for-medium{display:none}}@media (max-width:29.9375em){.show-for-medium{display:none}}@media (min-width:30em) and (max-width:47.9375em){.hide-for-medium-only{display:none}}@media (max-width:29.9375em) and (min-width:48em){.show-for-medium-only{display:none}}@media (max-width:47.9375em){.show-for-large{display:none}}@media (min-width:48em){.hide-for-large{display:none}}@media (min-width:48em) and (max-width:63.9375em){.hide-for-large-only{display:none}}@media (max-width:48em) and (min-width:64em){.show-for-large-only{display:none}}@media (max-width:63.9375em){.show-for-xlarge{display:none}}@media not print{.show-for-print{display:none}}@media print{*{background:0 0;box-shadow:none;color:#000;text-shadow:none}.hide-for-print{display:none}}
+
+
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 0;
+        height: 0;
+        overflow: hidden;
+    }
+
+    .video-container iframe,
+    .video-container object,
+    .video-container embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
 
     </style><style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript></head>
 
