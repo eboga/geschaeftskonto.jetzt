@@ -64,7 +64,7 @@
 
 
 
-    <title>Geschäftskonto für Freiberufler & Selbständige</title>
+    <title>Geschäftskonto für Freiberufler & Selbständige 2022</title>
 
     
 
@@ -72,11 +72,11 @@
 
     <meta property="og:locale" content="de" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Geschäftskonto für Freiberufler & Selbständige" />
+    <meta property="og:title" content="Geschäftskonto für Freiberufler & Selbständige 2022" />
     <meta property="og:description" content="Online Geschäftskonten im Vergleich ➤ Finden Sie hier das passende Konto für Ihr Unternehmen ➤ Für Gründer, Freiberufler & Unternehmer ➤ Jetzt informieren." />
     <meta property="og:url" content="https://www.geschaeftskonto.jetzt/geschaeftskonto-vergleich/freiberufler/" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Geschäftskonto für Freiberufler & Selbständige" />
+    <meta name="twitter:title" content="Geschäftskonto für Freiberufler & Selbständige 2022" />
     <meta name="twitter:description" content="Online Geschäftskonten im Vergleich ➤ Finden Sie hier das passende Konto für Ihr Unternehmen ➤ Für Gründer, Freiberufler & Unternehmer ➤ Jetzt informieren." />
 
 
@@ -321,7 +321,7 @@
             <div class="c-FavoriteSummary-block c-FavoriteSummary-block--third qm-sm-12-12 qm-lg-4-12 qm-xl-3-12">
                 <div class="c-ProductImage"><img class="c-ProductImage-img" src="/assets/images/HB_FMH_TOP_DigitalesGeschaeftskonto2019_Penta.jpg" width="80" height="138" layout="intrinsic" alt="Banner" /></div>
                 <div class="c-ProductBtns">
-                    <a class="c-ProductBtns-btn" href="/zur-bank/penta-starter-german/" rel="noopener nofollow" target="_blank">Zur Bank →</a>
+                    <a class="c-ProductBtns-btn js-ToBankLink" href="/zur-bank/penta-starter-german/" rel="noopener nofollow" target="_blank">Zur Bank →</a>
                 </div>
             </div>
         </div>
@@ -17252,6 +17252,7 @@
 
         <script src="/assets/js/mixitup.min.js"></script>
         <script src="/assets/js/mixitup-multifilter.min.js"></script>
+        <script src="/assets/js/parameters.js"></script>
         <script>
             var headerDrawer      = document.querySelector(".js-HeaderDrawer");
             var headerToggleClose = document.querySelector(".js-HeaderToogleClose");
@@ -17575,35 +17576,6 @@
 
                 comparisonProductsMixer.sort("default:asc");
             });
-
-
-
-
-
-
-            /**
-             * The parser of utm_campaign
-             */
-
-            var locationParams = new URLSearchParams(document.location.search.substring(1));
-            var locationParamUtmCampaignValue = locationParams.get("utm_campaign");
-
-            if (locationParamUtmCampaignValue !== null) {
-                var comaprisonProductBtnsToBank = document.querySelectorAll(".js-ToBankLink");
-                comaprisonProductBtnsToBank.forEach(function(btn) {
-                    var oldHref    = btn.href;
-                    var newHref;
-
-                    var url    = new URL(oldHref);
-                    var params = new URLSearchParams(url);
-                    var subid  = params.get("subid");
-
-                    if (subid === null) {
-                        newHref  = oldHref + '?subid=' + locationParamUtmCampaignValue;
-                        btn.href = oldHref.replace(oldHref, newHref);
-                    }
-                });
-            }
 
 
 

@@ -8,26 +8,24 @@
     
     
         <script>
-            String.prototype.includes||(String.prototype.includes=function(t,i){"use strict";return"number"!=typeof i&&(i=0),!(i+t.length>this.length)&&-1!==this.indexOf(t,i)});
+            const destination = new URL('https://www.financeads.net/tc.php?t=32210C105136958T&subid=gskj');
+            const current = new URL(window.location);
 
-            var target = "https://www.financeads.net/tc.php?t=32210C105136958T&subid=gskj";
-
-            if (window.location.search) {
-                var search = window.location.search.substring(1).split("&");
-                var obj = {};
-
-                for (var i = 0; i < search.length; i++) {
-                    var pairs = search[i].split("=");
-                    obj[pairs[0]] = pairs[1];
+            if (current.search.length > 0) {
+                if (current.searchParams.has('tracking_id')) {
+                    destination.searchParams.set('tracking_id', current.searchParams.get('tracking_id'));
                 }
 
-                if (target.includes("subid=") && obj.subid) {
-                    var id = target.split("subid=")[1].split("&")[0];
-                    target = target.replace("subid=" + id, "subid=" + obj.subid);
+                if (current.searchParams.has('tracking_type')) {
+                    destination.searchParams.set('tracking_type', current.searchParams.get('tracking_type'));
+                }
+
+                if (current.searchParams.has('subid')) {
+                    destination.searchParams.set('subid', current.searchParams.get('subid'));
                 }
             }
 
-            window.location.replace(target);
+            window.location.replace(destination.href);
         </script>
     
 </body>

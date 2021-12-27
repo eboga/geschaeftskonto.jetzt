@@ -430,7 +430,7 @@
             <div class="c-FavoriteSummary-block c-FavoriteSummary-block--third qm-sm-12-12 qm-lg-4-12 qm-xl-3-12">
                 <div class="c-ProductImage"><img class="c-ProductImage-img" src="/assets/images/1x1.gif" width="1" height="1" layout="intrinsic" alt="Banner" /></div>
                 <div class="c-ProductBtns">
-                    <a class="c-ProductBtns-btn" href="/zur-bank/fyrst-base/" rel="noopener nofollow" target="_blank">Zur Bank →</a>
+                    <a class="c-ProductBtns-btn js-ToBankLink" href="/zur-bank/fyrst-base/" rel="noopener nofollow" target="_blank">Zur Bank →</a>
                 </div>
             </div>
         </div>
@@ -17447,6 +17447,7 @@
 
         <script src="/assets/js/mixitup.min.js"></script>
         <script src="/assets/js/mixitup-multifilter.min.js"></script>
+        <script src="/assets/js/parameters.js"></script>
         <script>
             var headerDrawer      = document.querySelector(".js-HeaderDrawer");
             var headerToggleClose = document.querySelector(".js-HeaderToogleClose");
@@ -17769,35 +17770,6 @@
 
                 comparisonProductsMixer.sort("default:asc");
             });
-
-
-
-
-
-
-            /**
-             * The parser of utm_campaign
-             */
-
-            var locationParams = new URLSearchParams(document.location.search.substring(1));
-            var locationParamUtmCampaignValue = locationParams.get("utm_campaign");
-
-            if (locationParamUtmCampaignValue !== null) {
-                var comaprisonProductBtnsToBank = document.querySelectorAll(".js-ToBankLink");
-                comaprisonProductBtnsToBank.forEach(function(btn) {
-                    var oldHref    = btn.href;
-                    var newHref;
-
-                    var url    = new URL(oldHref);
-                    var params = new URLSearchParams(url);
-                    var subid  = params.get("subid");
-
-                    if (subid === null) {
-                        newHref  = oldHref + '?subid=' + locationParamUtmCampaignValue;
-                        btn.href = oldHref.replace(oldHref, newHref);
-                    }
-                });
-            }
 
 
 

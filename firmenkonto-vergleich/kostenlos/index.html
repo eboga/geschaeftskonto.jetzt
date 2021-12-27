@@ -64,7 +64,7 @@
 
 
 
-    <title>Kostenlose Firmenkonten im Vergleich: Vergleich aller Firmenkonten</title>
+    <title>Kostenlose Firmenkonten im Vergleich 2022: Vergleich aller Firmenkonten</title>
 
     
 
@@ -72,11 +72,11 @@
 
     <meta property="og:locale" content="de" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Kostenlose Firmenkonten im Vergleich: Vergleich aller Firmenkonten" />
+    <meta property="og:title" content="Kostenlose Firmenkonten im Vergleich 2022: Vergleich aller Firmenkonten" />
     <meta property="og:description" content="Kostenlose Firmenkonten im Vergleich ➤ Finden Sie hier das passende Konto für Ihr Unternehmen ➤ Für Gründer, Freiberufler & Unternehmer ➤ Jetzt informieren." />
     <meta property="og:url" content="https://www.geschaeftskonto.jetzt/firmenkonto-vergleich/kostenlos/" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Kostenlose Firmenkonten im Vergleich: Vergleich aller Firmenkonten" />
+    <meta name="twitter:title" content="Kostenlose Firmenkonten im Vergleich 2022: Vergleich aller Firmenkonten" />
     <meta name="twitter:description" content="Kostenlose Firmenkonten im Vergleich ➤ Finden Sie hier das passende Konto für Ihr Unternehmen ➤ Für Gründer, Freiberufler & Unternehmer ➤ Jetzt informieren." />
 
 
@@ -17205,6 +17205,7 @@
 
         <script src="/assets/js/mixitup.min.js"></script>
         <script src="/assets/js/mixitup-multifilter.min.js"></script>
+        <script src="/assets/js/parameters.js"></script>
         <script>
             var headerDrawer      = document.querySelector(".js-HeaderDrawer");
             var headerToggleClose = document.querySelector(".js-HeaderToogleClose");
@@ -17527,35 +17528,6 @@
 
                 comparisonProductsMixer.sort("default:asc");
             });
-
-
-
-
-
-
-            /**
-             * The parser of utm_campaign
-             */
-
-            var locationParams = new URLSearchParams(document.location.search.substring(1));
-            var locationParamUtmCampaignValue = locationParams.get("utm_campaign");
-
-            if (locationParamUtmCampaignValue !== null) {
-                var comaprisonProductBtnsToBank = document.querySelectorAll(".js-ToBankLink");
-                comaprisonProductBtnsToBank.forEach(function(btn) {
-                    var oldHref    = btn.href;
-                    var newHref;
-
-                    var url    = new URL(oldHref);
-                    var params = new URLSearchParams(url);
-                    var subid  = params.get("subid");
-
-                    if (subid === null) {
-                        newHref  = oldHref + '?subid=' + locationParamUtmCampaignValue;
-                        btn.href = oldHref.replace(oldHref, newHref);
-                    }
-                });
-            }
 
 
 
